@@ -1,0 +1,367 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+.main-header{
+  background-color: #00B5C9;
+  display: flex;
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  padding-left: 1.7%;
+  font-style: bold;
+  font-size:45px;
+  color: white;
+  font-weight: bold;
+}
+
+.main-body{
+  display:flex;
+}
+
+.body-col{
+  width: 33%;
+  padding:2%;
+}
+
+.subtitulo{
+  font-weight: bold;
+  color: #00B5C9;
+}
+
+.text{
+  font-size: 18px;
+}
+/*/
+Columna 1
+/*/
+.fila-dato{
+  display: flex;
+  justify-content:center;
+  margin-top:2%;
+}
+
+.dato-izq{
+  width:50%;
+  float: left;
+  color: #00B5C9;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 2%;
+}
+.dato-der{
+  width:50%;
+  float:right;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+.c1-habilidades{
+  margin-top: 10%;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.hab-batch{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+.habilidad{
+
+  background-color:#00B5C9;
+  border-radius:5px;
+  text-align:center;
+  padding: 5%;
+  padding-right: 7%;
+  padding-left: 7%;
+  font-size: 14px;
+}
+
+.c1-foto{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20%;
+}
+.c1-foto img {
+	width: 300px;
+	height: 350px;
+
+
+}
+/*/ 
+Columna 2/*/
+.mot{
+  margin-bottom:2%;
+}
+.mot-gris{
+  background-color: #CCCCCC;
+}
+.mot-blanco{
+  background-color: #F2F2F2;
+}
+
+.metas{
+  margin-top:7%;
+  margin-bottom:7%;
+}
+
+.meta{
+  
+}
+.biografia{
+  background-color: #F2F2F2;
+  padding:5% 2% 5% 2%;
+}
+
+.c3-historial{
+  margin-bottom:15%;
+}
+
+.tecnologia-barra{
+  display: flex
+}
+.tecnologia-barra-izq{
+  min-height:10px;
+  min-width:10px;
+  background-color: #00B5C9;
+}
+.tecnologia-barra-der{
+  min-height:10px; 
+  min-width:10px;
+  background-color:#F2F2F2;
+}
+
+.izq-1{
+  width:70%
+} 
+
+.der-1{
+  width:30%
+}
+
+.izq-2{
+  width:40%
+} 
+
+.der-2{
+  width:60%
+}
+
+.izq-3{
+  width:75%
+} 
+
+.der-3{
+  width:25%
+}
+
+.izq-4{
+  width:30%
+} 
+
+.der-4{
+  width:70%
+}
+
+.c3-redes{
+  margin-top:40%;
+  display: flex;
+  justify-content:space-between;
+  font-size: 80px;
+ 
+
+}
+
+.c3-redes a{
+	color: #00B5C9;
+  	text-decoration: none;
+}
+
+footer{
+	background-color: #00B5C9;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	padding: 1%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+	.main-body{
+		flex-direction: column;
+		height: 100%;
+	}
+	.text{
+		text-align: center;
+	}
+	.subtitulo{
+		text-align: center;
+		padding-bottom: 5%;
+	}
+	.body-col{
+		margin-top: 5%;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.c1-foto{
+		width: 30%;
+		height: 100%;
+	}
+	.c1-foto img {
+		width: 200px;
+		height: 250px;
+}
+	.c1-datos{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.c1-habilidades{
+		margin: 0;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 33%;
+	}
+	.hab-batch{
+		flex-direction: column;
+		justify-content: space-around;
+		width: 60%;
+		height: 50%;
+		align-items: initial;
+	}
+	.c2{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.c2-mot-met{
+		display: flex;
+		flex-direction: row;
+		margin-top: 5%;
+	}
+	.c2-motivaciones{
+		width: 50%;
+	}
+	
+	.metas{
+		width: 50%;
+		margin: 0;
+	}
+	.biografia{
+		margin-top: 5%;
+	}
+	.biografia-body{
+		text-align: justify;
+	}
+	.col3{
+		display: flex;
+		flex-direction: column;
+	}
+	.c3-hist-tec{
+
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.c3-historial{
+		margin-bottom: 0;
+		width: 50%;
+		height:100%;
+		padding: 5%;
+	}
+	.c3-tecnologias{
+		margin-bottom: 0;
+		width:50%;
+		height:100%;
+		padding: 5%;
+	}
+
+	.c3-redes{
+		margin: 7%;
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 480px){
+	body{
+		width: 100%;
+	}
+	.main-header{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.main-body{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	.body-col{
+		width: 100%;
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+	.c1-datos{
+		padding-right:5%; 
+		padding-left:5%;
+	}
+
+	.c1-habilidades{
+		
+	}
+	.hab-batch{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.habilidad{
+		width: 75%;
+		margin-bottom: 5%;
+	}
+
+	.metas{
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+
+	.lista-metas{
+		text-align: left;
+	}
+	.biografia {
+		padding-right: 10%;
+		padding-left: 10%;
+
+	}
+	.biografia-body{
+		text-align: justify;
+	}
+
+	.c3-historial{
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.lista-historial{
+		text-align: left;
+	}
+
+
+	.c3-tecnologias{
+		padding: 10%;
+	}
+
+	.c3-redes{
+		justify-content: space-around;
+	}
+}
+
+
+}
